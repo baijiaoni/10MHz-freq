@@ -1,0 +1,136 @@
+|light
+clk => pll:mypll.inclk0
+clk => foo.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+x1 => last.CLK
+x1 => count3[0].CLK
+x1 => count3[1].CLK
+x1 => count3[2].CLK
+x1 => count3[3].CLK
+x1 => count3[4].CLK
+x1 => foo2.CLK
+x2 => process_1.IN1
+x2 => last.DATAIN
+y1 <= pll:mypll.c0
+y2 <= y2.DB_MAX_OUTPUT_PORT_TYPE
+y3 <= foo.DB_MAX_OUTPUT_PORT_TYPE
+y5 <= foo2.DB_MAX_OUTPUT_PORT_TYPE
+sel <= <VCC>
+seln <= <GND>
+LED0 <= LED0.DB_MAX_OUTPUT_PORT_TYPE
+LED1 <= <GND>
+LED2 <= LED2.DB_MAX_OUTPUT_PORT_TYPE
+LED3 <= LED3.DB_MAX_OUTPUT_PORT_TYPE
+LED4 <= LED4.DB_MAX_OUTPUT_PORT_TYPE
+LED5 <= LED5.DB_MAX_OUTPUT_PORT_TYPE
+LED6 <= LED6.DB_MAX_OUTPUT_PORT_TYPE
+LED7 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|light|pll:mypll
+inclk0 => altpll:altpll_component.inclk[0]
+c0 <= altpll:altpll_component.clk[0]
+locked <= altpll:altpll_component.locked
+
+
+|light|pll:mypll|altpll:altpll_component
+inclk[0] => pll_altpll:auto_generated.inclk[0]
+inclk[1] => pll_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => ~NO_FANOUT~
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+clk[5] <= clk[5].DB_MAX_OUTPUT_PORT_TYPE
+clk[6] <= clk[6].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= pll_altpll:auto_generated.locked
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|light|pll:mypll|altpll:altpll_component|pll_altpll:auto_generated
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+clk[5] <= pll1.CLK5
+clk[6] <= pll1.CLK6
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+locked <= pll1.LOCKED
+
+

@@ -1,0 +1,22 @@
+Fitter Status : Successful - Wed Feb  5 18:33:25 2014
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : light
+Top-level Entity Name : light
+Family : Arria II GX
+Device : EP2AGX125DF25C6ES
+Timing Models : Final
+Logic utilization : < 1 %
+    Combinational ALUTs : 43 / 99,280 ( < 1 % )
+    Memory ALUTs : 0 / 49,640 ( 0 % )
+    Dedicated logic registers : 35 / 99,280 ( < 1 % )
+Total registers : 35
+Total pins : 18 / 300 ( 6 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 6,727,680 ( 0 % )
+DSP block 18-bit elements : 0 / 576 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 1 / 6 ( 17 % )
+Total DLLs : 0 / 2 ( 0 % )
